@@ -10,8 +10,8 @@ import mysql.connector
 '''mydb=mysql.connector.connect(
     host='localhost',
     user='root',
-    password='vishalgupta',
-    database='sms'
+    password='' #put password of local database,
+    database='' #database used
     )'''
 
 ################ CLEVER CLOUD SERVER MYSQL DATABASE CONNECTION #########################
@@ -19,17 +19,11 @@ try:
     mydb=mysql.connector.connect(
         host='b34hlxjqjbpnwinxud9w-mysql.services.clever-cloud.com',
         user='u6haifwrupocxuc7',
-        password='zYNzWRRrXtiHyeugOaT8',
-        database='b34hlxjqjbpnwinxud9w'
+        password='zYNz****rXti****gOaT8', #password of clever cloud mysql
+        database='************'      #database made on clever cloud used
         )
 
 
-    '''mydb=mysql.connector.connect(
-        host='localhost',
-        user='root',
-        password='vishalgupta',
-        database='sms'
-        )'''
     mc=mydb.cursor()
 
 except:
